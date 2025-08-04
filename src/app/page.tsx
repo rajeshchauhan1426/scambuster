@@ -1,8 +1,8 @@
 import { Header } from "@/components/header";
 import { ContentAnalyzer } from "@/components/content-analyzer";
-import { AboutSection } from "@/components/about-section";
 import { Button } from "@/components/ui/button";
-import { Shield, Bot, FileScan } from "lucide-react";
+import { Shield, Bot, FileScan, Users } from "lucide-react";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -27,17 +27,17 @@ export default function Home() {
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12">Why SafeNet.AI?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center p-6 rounded-lg hover:bg-card transition-colors">
                         <Shield className="h-12 w-12 text-primary mb-4" />
                         <h3 className="text-xl font-semibold mb-2">Comprehensive Protection</h3>
                         <p className="text-muted-foreground">Detects a wide range of threats including phishing, scams, and deepfakes in one platform.</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center p-6 rounded-lg hover:bg-card transition-colors">
                         <Bot className="h-12 w-12 text-primary mb-4" />
                         <h3 className="text-xl font-semibold mb-2">AI-Driven Analysis</h3>
-                        <p className="text-muted-foreground">Leverages advanced AI and NLP to provide real-time risk scores and detailed explanations.</p>
+                        <p className="text-muted-foreground">Leverages advanced AI to provide real-time risk scores and detailed explanations.</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center p-6 rounded-lg hover:bg-card transition-colors">
                         <FileScan className="h-12 w-12 text-primary mb-4" />
                         <h3 className="text-xl font-semibold mb-2">Multi-Format Scanning</h3>
                         <p className="text-muted-foreground">Analyze text, emails, messages, and soon, URLs and files for complete digital safety.</p>
@@ -50,7 +50,18 @@ export default function Home() {
             <ContentAnalyzer />
         </section>
 
-        <AboutSection />
+        <section id="about-us-cta" className="py-16 md:py-24 text-center bg-card/50 rounded-xl">
+            <div className="container mx-auto max-w-3xl">
+                <Users className="h-16 w-16 text-primary mx-auto mb-6" />
+                <h2 className="text-3xl font-bold mb-4">Curious About the Minds Behind the Shield?</h2>
+                <p className="text-muted-foreground mb-8 text-lg">
+                    Meet the team of dedicated experts who are committed to building a safer digital environment for everyone.
+                </p>
+                <Button asChild size="lg" variant="outline">
+                    <Link href="/about">Learn More About Us</Link>
+                </Button>
+            </div>
+        </section>
 
       </main>
       <footer className="text-center p-4 text-muted-foreground text-sm">
