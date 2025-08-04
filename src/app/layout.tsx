@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'ScamBuster.ai',
-  description: 'AI-Powered Web Platform to Detect & Prevent Online Scams, Frauds, and Deepfakes',
+  title: 'SafeNet.AI',
+  description: 'An AI-powered web platform to detect and prevent various online threats such as scam messages, phishing URLs, and deepfakes.',
 };
 
 export default function RootLayout({
