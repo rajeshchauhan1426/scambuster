@@ -10,8 +10,7 @@ const teamMembers = [
         role: "CEO & Lead Architect",
         avatar: "RK",
         imageUrl: "https://placehold.co/400x400.png",
-        bio: "With over 15 years in cybersecurity, Rajesh leads the team with a vision to make the digital world a safer place. His expertise in AI and scalable systems is the driving force behind SafeNet.AI.",
-        dataAiHint: "man portrait"
+        bio: "With years of hands-on experience in full-stack development, Rajesh brings a deep understanding of modern web technologies and scalable architectures. His passion for building clean, efficient, and user-centric applications drives every project forward. At the intersection of performance and innovation, Rajesh crafts digital experiences that are both robust and future-ready"
     },
     {
         name: "Satish Gupta",
