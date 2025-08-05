@@ -6,7 +6,7 @@ import { AboutSection } from "@/components/about-section";
 
 const teamMembers = [
     {
-        name: "Rajesh Kumar",
+        name: "Rajesh Chauhan",
         role: "CEO & Lead Architect",
         avatar: "RK",
         imageUrl: "https://placehold.co/400x400.png",
@@ -14,7 +14,7 @@ const teamMembers = [
         dataAiHint: "man portrait"
     },
     {
-        name: "Satish Patel",
+        name: "Satish Gupta",
         role: "Head of AI Research",
         avatar: "SP",
         imageUrl: "https://placehold.co/400x400.png",
@@ -22,7 +22,7 @@ const teamMembers = [
         dataAiHint: "man portrait"
     },
     {
-        name: "Ayush Sharma",
+        name: "Ayush Khanal",
         role: "Lead Frontend Developer",
         avatar: "AS",
         imageUrl: "https://placehold.co/400x400.png",
