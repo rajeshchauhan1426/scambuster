@@ -4,3 +4,4 @@ config();
 
 import '@/ai/flows/generate-report-summary.ts';
 import '@/ai/flows/analyze-content.ts';
+import '@/ai/flows/analyze-media.ts';

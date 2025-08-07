@@ -2,13 +2,13 @@
 "use client";
 
 import type { AnalyzeContentOutput } from "@/ai/flows/analyze-content";
+import type { AnalyzeMediaOutput } from "@/ai/flows/analyze-media";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card";
 import {
   Dialog,
@@ -32,7 +32,7 @@ import { useMemo } from "react";
 import { Separator } from "./ui/separator";
 
 interface ResultsDashboardProps {
-  result: AnalyzeContentOutput;
+  result: AnalyzeContentOutput | AnalyzeMediaOutput;
 }
 
 const agencyLinks = [
